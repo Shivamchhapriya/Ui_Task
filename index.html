@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Metrophobic&display=swap"
+        rel="stylesheet">
+</head>
+<script>
+    var data = ["first_box", "second_box", "third_box"]
+
+    var radio_btn = (id) => {
+        for (let i = 0; i < data.length; i++) {
+            if(data[i] === id){
+                document.getElementById(data[i]).classList.remove("hide_cls");
+                
+
+            }
+            else {
+                document.getElementById(data[i]).classList.add("hide_cls");
+
+            }
+        }
+    }
+</script>
+
+<body>
+    <div class="main-container">
+        <div class="d_flex">
+            <p class="border"></p>
+            <h1 class="bundle_box">Bundle & Save </h1>
+            <p class="border"></p>
+
+        </div>
+        <!-- box 1 -->
+        <div class="border_box" id="box">
+            <input type="radio" name="radios" value="30" onclick="radio_btn('first_box')">
+            <label for="age1">
+                <div style="display: flex ; gap:10rem">
+                    <p style="margin-left: 36px;"> 1 Pair</p>
+                </div>
+                <div class="d_flex_box">
+                    <p class="Dkk1">DKK 345.00</p>
+                    <p style="margin-top: 7px;">50% OFF</p>
+                </div>
+                <div class="hide_cls" id="first_box">
+                    <div class="" style="display: flex; margin-top: -18px;gap: 56px;margin-left: 47px;">
+                        <p class="size_color">Size</p>
+                        <p class="size_color">Colour</p>
+                    </div>
+                    <div class="" style="display: flex; margin-top: -10px;margin-left: 22px;">
+                        <p class="size_color">#1</p>
+
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">S</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">Colour</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="" style="display: flex; margin-top: -3px;margin-left: 21px;">
+                        <p class="size_color">#2</p>
+
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">S</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">Colour</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+
+            </label>
+
+        </div>
+        <!-- box 2 -->
+        <div class="border_box">
+            <input type="radio" name="radios" value="30" onclick="radio_btn('second_box')">
+            <label for="age1">
+                <div style="display: flex ; gap:10rem">
+                    <p style="margin-left: 36px;"> 2 Pair</p>
+                    <p class="most_Popular">Most Popular</p>
+                </div>
+                <div class="d_flex_box2">
+                    <p class="Dkk1">DKK 345.00</p>
+                    <p class="dkk2">DKK 195.00</p>
+                    <p style="margin-top: 7px;">40% OFF</p>
+                </div>
+                <div class="hide_cls"  id="second_box">
+                    <div class="" style="display: flex; margin-top: -18px;gap: 56px;margin-left: 47px;">
+                        <p class="size_color">Size</p>
+                        <p class="size_color">Colour</p>
+                    </div>
+                    <div class="" style="display: flex; margin-top: -10px;margin-left: 22px;">
+                        <p class="size_color">#1</p>
+
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">S</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">Colour</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="" style="display: flex; margin-top: -3px;margin-left: 21px;">
+                        <p class="size_color">#2</p>
+
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">S</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">Colour</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+
+            </label>
+
+        </div>
+        <!-- box 3 -->
+        <div class="border_box" type="button">
+            <input type="radio" name="radios" class="" value="30" onclick="radio_btn('third_box')">
+            <label for="age1">
+                <div style="display: flex ; gap:10rem">
+                    <p style="margin-left: 36px;"> 3 Pair</p>
+                </div>
+                <div class="d_flex_box">
+                    <p class="Dkk1">DKK 345.00</p>
+                    <p style="margin-top: 7px;">60% OFF</p>
+                </div>
+                <div class="hide_cls" id="third_box">
+                    <div class="" style="display: flex; margin-top: -15px;gap: 56px;margin-left: 47px;">
+                        <p class="size_color">Size</p>
+                        <p class="size_color">Colour</p>
+                    </div>
+                    <div class="" style="display: flex; margin-top: -10px;margin-left: 22px;">
+                        <p class="size_color">#1</p>
+
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">S</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">Colour</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="" style="display: flex; margin-top: -3px;margin-left: 21px;">
+                        <p class="size_color">#2</p>
+
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">S</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <select class="DropDown" style="margin-left: 10px;" name="cars" id="cars">
+                            <option value="volvo">Colour</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+
+                </div>
+            </label>
+
+        </div>
+
+        <div style="">
+            <p class="freeShip">Free 2 Day Shipping</p>
+            <p class="totalDkk" style="margin-right: 45px;" ><span style="font-weight: 400;"> Total </span>:  DKK 360.00</p>
+        </div>
+        <button type="button" class="addBtn"> <span class="addCard">+ Add to Cart</span></button>
+        <p class="" style="text-align: end; margin-right: 45px;"><span class="Cbox">c</span><i style="color: #000000;font-weight: 400;"> Powered by Pumper </i></p>
+
+    </div>
+</body>
+
+</html>

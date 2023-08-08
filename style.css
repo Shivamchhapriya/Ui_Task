@@ -204,15 +204,21 @@ color: #FFFFFF;
     .addBtn{
         width: 338px;
     }
+    .totalDkk{
+        margin-right: 45px;
+    }
+    .power{
+        margin-right: 45px;
+
+    }
     
   }
   @media (min-width: 768px) and (max-width: 1024px){
     .main-container {
        width: 45%;
     }
+    
 }
 
-.box_background{
-    background-color: #000000 !important;
-}
+
 

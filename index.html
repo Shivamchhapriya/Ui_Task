@@ -11,16 +11,23 @@
 </head>
 <script>
     var data = ["first_box", "second_box", "third_box"]
+    var Box = ["box_one", "box_second", "box_third"]
 
-    var radio_btn = (id) => {
+
+
+    var radio_btn = (id,num) => {
+       
         for (let i = 0; i < data.length; i++) {
             if(data[i] === id){
                 document.getElementById(data[i]).classList.remove("hide_cls");
-                
-
+                document.getElementById(Box[i]).classList.add("border_box1");
+               
             }
             else {
                 document.getElementById(data[i]).classList.add("hide_cls");
+                document.getElementById(Box[i]).classList.remove("border_box1");
+               
+
 
             }
         }
@@ -36,10 +43,10 @@
 
         </div>
         <!-- box 1 -->
-        <div class="border_box" id="box">
-            <input type="radio" name="radios" value="30" onclick="radio_btn('first_box')">
-            <label for="age1">
-                <div style="display: flex ; gap:10rem">
+        <label for="box1">
+        <div class="border_box" id="box_one">
+            <input type="radio" name="radios" id="box1" value="30" onclick="radio_btn('first_box',0)">
+                <div class="plan-content" style="display: flex ; gap:10rem">
                     <p style="margin-left: 36px;"> 1 Pair</p>
                 </div>
                 <div class="d_flex_box">
@@ -89,9 +96,9 @@
 
         </div>
         <!-- box 2 -->
-        <div class="border_box">
-            <input type="radio" name="radios" value="30" onclick="radio_btn('second_box')">
-            <label for="age1">
+        <label for="box2">
+        <div class="border_box" id="box_second">
+            <input type="radio" name="radios" id="box2" value="30" onclick="radio_btn('second_box',1)">
                 <div style="display: flex ; gap:10rem">
                     <p style="margin-left: 36px;"> 2 Pair</p>
                     <p class="most_Popular">Most Popular</p>
@@ -144,9 +151,9 @@
 
         </div>
         <!-- box 3 -->
-        <div class="border_box" type="button">
-            <input type="radio" name="radios" class="" value="30" onclick="radio_btn('third_box')">
-            <label for="age1">
+        <label for="box3">
+        <div class="border_box" type="button" id="box_third">
+            <input type="radio" name="radios" class="" id="box3" value="30" onclick="radio_btn('third_box',2)">
                 <div style="display: flex ; gap:10rem">
                     <p style="margin-left: 36px;"> 3 Pair</p>
                 </div>
